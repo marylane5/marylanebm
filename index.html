@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Mary Beem · Portfolio</title>
+  <link rel="stylesheet" href="css/styles.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
+</head>
+
+<body>
+
+  <!-- HEADER -->
+  <header class="header">
+    <h1 class="logo">Mary Beem</h1>
+    <nav class="nav">
+      <a href="#about">About</a>
+      <a href="#projects">Projects</a>
+      <a href="https://drive.google.com/file/d/1-BDF_xsXw0LMVw3CCy0lGQUqEVuBNM8o/view?usp=drive_link" target="_blank">Resume</a>
+      <a href="#contact">Contact</a>
+    </nav>
+  </header>
+
+  <!-- HERO -->
+  <section class="hero">
+    <div class="hero-content">
+      <h2>Web & Digital Designer</h2>
+      <p>UX · UI · Digital Marketing · Creative Web Builds</p>
+    </div>
+  </section>
+
+  <!-- ABOUT -->
+  <section id="about" class="about">
+    <h2>About Me</h2>
+
+    <div class="about-wrapper">
+      <img src="img/about-photo.jpeg" alt="Photo of Mary Beem" class="about-photo">
+
+      <div class="about-text">
+        <p>
+          Hi, I’m Mary Beem — a web and digital design student focused on marketing,
+          user experience, and simple, clean designs. I love mixing design and 
+          marketing to make websites that actually work for people. I’ve built 
+          responsive sites, UX/UI prototypes, JavaScript projects, and full social 
+          media + email campaigns.
+        </p>
+
+        <p>
+          I’m also a mom and military wife who loves traveling, exploring new ideas, 
+          and testing creative apps. I enjoy learning new skills and creating work 
+          that feels meaningful and clear.
+        </p>
+
+        <p>
+          <strong>Career Goal:</strong> Build a digital marketing career where I can mix creativity, 
+          accessibility, user-friendly design, and smart strategies. I’m especially 
+          interested in UX research, mobile-first design, analytics, and modern web tools.
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <!-- PROJECTS -->
+  <section id="projects" class="projects">
+    <h2>Projects</h2>
+
+    <div class="project-grid">
+
+      <!-- PROJECT 1 -->
+      <article class="project-card">
+        <h3>Bake: Sweet Dreams Prototype</h3>
+        <p>Full UX/UI design prototype for a baking brand. Includes homepage, grids, recipe detail, shop, login, and more.</p>
+        <button class="project-open" data-modal="sweetdreams-modal">View Project</button>
+      </article>
+
+      <!-- PROJECT 2 -->
+      <article class="project-card">
+        <h3>Web Design Resource Hub</h3>
+        <p>A full educational website covering UX, accessibility, security, optimization, and responsive design.</p>
+        <button class="project-open" data-modal="resourcehub-modal">View Project</button>
+      </article>
+
+      <!-- PROJECT 3 -->
+      <article class="project-card">
+        <h3>Responsive Design Project</h3>
+        <p>Desktop, tablet, and mobile layouts plus analytics insights using real design screens.</p>
+        <button class="project-open" data-modal="responsive-modal">View Project</button>
+      </article>
+
+    </div>
+  </section>
+
+  <!-- CONTACT -->
+  <section id="contact" class="contact">
+    <h2>Contact</h2>
+    <p>Email: <a href="mailto:marylane91.mj@gmail.com">marylane91.mj@gmail.com</a></p>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <p>© 2025 · Mary Beem · All Rights Reserved</p>
+  </footer>
+
+  <!-- =========================
+       PROJECT MODALS
+       ========================= -->
+
+  <!-- PROJECT 1 MODAL -->
+  <div class="modal" id="sweetdreams-modal">
+    <div class="modal-backdrop" data-close-modal></div>
+    <div class="modal-dialog">
+      <button class="modal-close" data-close-modal>&times;</button>
+
+      <h3>Bake: Sweet Dreams – UX/UI Prototype</h3>
+      <p class="modal-text">
+        A full UX/UI website prototype created for a baking brand. Includes homepage, category grids,
+        recipe detail pages, shop page, login, signup, and soft, calm colors.
+      </p>
+
+      <div class="modal-images">
+        <figure class="modal-image-full">
+          <img src="img/project1-long.png" alt="">
+          <figcaption>Full homepage long scroll</figcaption>
+        </figure>
+
+        <div class="modal-image-row">
+          <figure><img src="img/project1-screen1.png" alt=""><figcaption>Main recipe grid</figcaption></figure>
+          <figure><img src="img/project1-screen2.png" alt=""><figcaption>Recipe detail page</figcaption></figure>
+          <figure><img src="img/project1-screen3.png" alt=""><figcaption>Signup page</figcaption></figure>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- PROJECT 2 MODAL -->
+  <div class="modal" id="resourcehub-modal">
+    <div class="modal-backdrop" data-close-modal></div>
+    <div class="modal-dialog">
+      <button class="modal-close" data-close-modal>&times;</button>
+
+      <h3>Web Design Resource Hub</h3>
+      <p class="modal-text">Full long-scroll website with UX, accessibility, security, optimization, and responsive design sections.</p>
+
+      <div class="modal-images">
+        <figure class="modal-image-full">
+          <img src="img/project2.png" alt="">
+          <figcaption>Full-page long screenshot</figcaption>
+        </figure>
+      </div>
+    </div>
+  </div>
+
+  <!-- PROJECT 3 MODAL -->
+  <div class="modal" id="responsive-modal">
+    <div class="modal-backdrop" data-close-modal></div>
+    <div class="modal-dialog">
+      <button class="modal-close" data-close-modal>&times;</button>
+
+      <h3>Responsive Design & Preprocessors</h3>
+      <p class="modal-text">Responsive layout screens across desktop, tablet, and mobile with analytics insights.</p>
+
+      <div class="modal-images">
+        <figure class="modal-image-full">
+          <img src="img/project3 1.png" alt="">
+          <figcaption>Desktop view</figcaption>
+        </figure>
+
+        <div class="modal-image-row">
+          <figure><img src="img/project3 2.png" alt=""><figcaption>Wide view</figcaption></figure>
+          <figure><img src="img/project3 3.png" alt=""><figcaption>Tablet view</figcaption></figure>
+          <figure><img src="img/project3 4.png" alt=""><figcaption>Mobile view</figcaption></figure>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- JS -->
+  <script>
+    const modals = document.querySelectorAll('.modal');
+    const openButtons = document.querySelectorAll('.project-open');
+    const closeElements = document.querySelectorAll('[data-close-modal]');
+
+    openButtons.forEach(btn => {
+      btn.addEventListener('click', () => {
+        const id = btn.dataset.modal;
+        document.getElementById(id).classList.add('active');
+      });
+    });
+
+    closeElements.forEach(el => {
+      el.addEventListener('click', () => {
+        modals.forEach(m => m.classList.remove('active'));
+      });
+    });
+  </script>
+
+</body>
+</html>
