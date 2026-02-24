@@ -66,6 +66,7 @@ section {
   color: white;
 }
 
+/* dark overlay for readability */
 .hero::before {
   content: "";
   position: absolute;
@@ -94,6 +95,7 @@ section {
 /* ============================
    ABOUT SECTION
 ============================ */
+
 .about-wrapper {
   display: flex;
   gap: 2rem;
@@ -116,9 +118,30 @@ section {
   line-height: 1.6;
 }
 
+/* Mobile */
+@media (max-width: 700px) {
+  .about-wrapper {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  .about-photo {
+    width: 220px;
+    height: 220px;
+  }
+
+  .about-text {
+    text-align: left;
+    max-width: 95%;
+    margin-top: 1.5rem;
+  }
+}
+
 /* ============================
    PROJECTS
 ============================ */
+
 .project-grid {
   display: grid;
   gap: 2rem;
@@ -159,6 +182,7 @@ section {
 /* ============================
    RESUME SECTION
 ============================ */
+
 .resume {
   padding: 4rem 1.5rem;
   max-width: 900px;
@@ -196,9 +220,41 @@ section {
   color: #444;
 }
 
+/* Mobile responsiveness for resume section */
+@media (max-width: 700px) {
+  .resume-images {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .resume-images figure {
+    max-width: 90%;
+  }
+}
+
+/* ============================
+   CONTACT
+============================ */
+
+.contact a {
+  color: #8b65d6;
+  font-weight: 500;
+}
+
+/* ============================
+   FOOTER
+============================ */
+.footer {
+  text-align: center;
+  padding: 3rem;
+  background: #f0eef5;
+  margin-top: 3rem;
+}
+
 /* ============================
    MODALS
 ============================ */
+
 .modal {
   position: fixed;
   inset: 0;
@@ -238,16 +294,33 @@ section {
   cursor: pointer;
 }
 
+/* Fullscreen modal images */
+.modal-images img {
+  width: 100%;
+  border-radius: 1rem;
+}
+
+/* Modal Text */
+.modal-text {
+  margin-bottom: 1.5rem;
+  font-size: 1rem;
+  color: #555;
+}
+
 /* ============================
    RESPONSIVE (MOBILE)
 ============================ */
+
 @media (max-width: 700px) {
-  .resume-images {
+  .modal-image-row {
     flex-direction: column;
-    align-items: center;
   }
 
-  .resume-images figure {
-    max-width: 90%;
+  .hero {
+    height: 55vh;
+  }
+
+  .hero-content h2 {
+    font-size: 2rem;
   }
 }
