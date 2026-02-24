@@ -16,7 +16,7 @@
     <nav class="nav">
       <a href="#about">About</a>
       <a href="#projects">Projects</a>
-      <a href="imgs/resume2026.pdf" target="_blank">Resume</a>
+      <a href="#" class="project-open" data-modal="resume-modal">Resume</a>
       <a href="#contact">Contact</a>
     </nav>
   </header>
@@ -87,20 +87,15 @@
 
   <!-- RESUME SECTION -->
   <section id="resume" class="resume">
-    <h2>Resume</h2> 
-    <p>Click image for PDF</p>   
+    <h2>Resume</h2>
     <div class="resume-images">
       <figure>
-        <a href="imgs/resume2026.pdf" target="_blank">
-          <img src="img/resume20261.jpg" alt="Resume part 1">
-        </a>
+        <img src="img/resume20261.jpg" alt="Resume part 1">
         <figcaption>Resume part 1</figcaption>
       </figure>
 
       <figure>
-        <a href="imgs/resume2026.pdf" target="_blank">
-          <img src="img/resume20262.jpg" alt="Resume part 2">
-        </a>
+        <img src="img/resume20262.jpg" alt="Resume part 2">
         <figcaption>Resume part 2</figcaption>
       </figure>
     </div>
@@ -120,7 +115,82 @@
   <!-- =========================
        PROJECT MODALS
        ========================= -->
-  <!-- (Project modals omitted for brevity) -->
+
+  <!-- PROJECT 1 MODAL -->
+  <div class="modal" id="sweetdreams-modal">
+    <div class="modal-backdrop" data-close-modal></div>
+    <div class="modal-dialog">
+      <button class="modal-close" data-close-modal>&times;</button>
+      <h3>Bake: Sweet Dreams – UX/UI Prototype</h3>
+      <p class="modal-text">A full UX/UI website prototype created for a baking brand. Includes homepage, category grids, recipe detail pages, shop page, login, signup, and soft, calm colors.</p>
+      <div class="modal-images">
+        <figure class="modal-image-full">
+          <img src="img/project11.png" alt="">
+          <figcaption>Full homepage </figcaption>
+        </figure>
+        <div class="modal-image-row">
+          <figure><img src="img/Bake_ Sweet Dreams.png" alt=""><figcaption>Full web site</figcaption></figure>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- PROJECT 2 MODAL -->
+  <div class="modal" id="resourcehub-modal">
+    <div class="modal-backdrop" data-close-modal></div>
+    <div class="modal-dialog">
+      <button class="modal-close" data-close-modal>&times;</button>
+      <h3>Web Design Resource Hub</h3>
+      <p class="modal-text">Full long-scroll website with UX, accessibility, security, optimization, and responsive design sections.</p>
+      <div class="modal-images">
+        <figure class="modal-image-full">
+          <img src="img/project2.png" alt="">
+          <figcaption>Full-page long screenshot</figcaption>
+        </figure>
+      </div>
+    </div>
+  </div>
+
+  <!-- PROJECT 3 MODAL -->
+  <div class="modal" id="responsive-modal">
+    <div class="modal-backdrop" data-close-modal></div>
+    <div class="modal-dialog">
+      <button class="modal-close" data-close-modal>&times;</button>
+      <h3>Responsive Design & Preprocessors</h3>
+      <p class="modal-text">Responsive layout screens across desktop, tablet, and mobile with analytics insights.</p>
+      <div class="modal-images">
+        <figure class="modal-image-full">
+          <img src="img/project3 1.png" alt="">
+          <figcaption>Desktop view</figcaption>
+        </figure>
+        <div class="modal-image-row">
+          <figure><img src="img/project3 2.png" alt=""><figcaption>Wide view</figcaption></figure>
+          <figure><img src="img/project3 3.png" alt=""><figcaption>Tablet view</figcaption></figure>
+          <figure><img src="img/project3 4.png" alt=""><figcaption>Mobile view</figcaption></figure>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- RESUME MODAL -->
+  <div class="modal" id="resume-modal">
+    <div class="modal-backdrop" data-close-modal></div>
+    <div class="modal-dialog">
+      <button class="modal-close" data-close-modal>&times;</button>
+      <h3>Resume</h3>
+      <p class="modal-text">Click below to view my resume.</p>
+      <div class="modal-images">
+        <figure class="modal-image-full">
+          <img src="img/resume20261.jpg" alt="Resume part 1">
+          <figcaption>Resume part 1</figcaption>
+        </figure>
+        <figure class="modal-image-full">
+          <img src="img/resume20262.jpg" alt="Resume part 2">
+          <figcaption>Resume part 2</figcaption>
+        </figure>
+      </div>
+    </div>
+  </div>
 
   <!-- JS -->
   <script>
