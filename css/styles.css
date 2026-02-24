@@ -107,13 +107,9 @@ section {
   height: 190px;
   object-fit: cover;
   border-radius: 1.2rem;
-
-  /* ✨ Soft Lavender Border */
   border: 6px solid #e4d9ff;
   background: white;
   padding: 6px;
-
-  /* Soft glow */
   box-shadow: 0 4px 22px rgba(139, 101, 214, 0.18);
 }
 
@@ -184,6 +180,59 @@ section {
 }
 
 /* ============================
+   RESUME SECTION
+============================ */
+
+.resume {
+  padding: 4rem 1.5rem;
+  max-width: 900px;
+  margin: auto;
+}
+
+.resume h2 {
+  font-size: 2.5rem;
+  margin-bottom: 2rem;
+  text-align: center;
+}
+
+.resume-images {
+  display: flex;
+  gap: 2rem;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.resume-images figure {
+  width: 100%;
+  max-width: 400px;
+  text-align: center;
+}
+
+.resume-images img {
+  width: 100%;
+  height: auto;
+  border-radius: 1rem;
+}
+
+.resume-images figcaption {
+  margin-top: 0.5rem;
+  font-size: 1rem;
+  color: #444;
+}
+
+/* Mobile responsiveness for resume section */
+@media (max-width: 700px) {
+  .resume-images {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .resume-images figure {
+    max-width: 90%;
+  }
+}
+
+/* ============================
    CONTACT
 ============================ */
 
@@ -206,7 +255,6 @@ section {
    MODALS
 ============================ */
 
-/* full screen modal layer */
 .modal {
   position: fixed;
   inset: 0;
@@ -225,7 +273,6 @@ section {
   inset: 0;
 }
 
-/* white modal box */
 .modal-dialog {
   background: white;
   max-width: 900px;
@@ -247,27 +294,13 @@ section {
   cursor: pointer;
 }
 
-/* modal content */
-.modal-images {
-  margin-top: 2rem;
-}
-
-.modal-image-full img {
+/* Fullscreen modal images */
+.modal-images img {
   width: 100%;
   border-radius: 1rem;
 }
 
-.modal-image-row {
-  display: flex;
-  gap: 1rem;
-  margin-top: 1.5rem;
-}
-
-.modal-image-row img {
-  width: 100%;
-  border-radius: 1rem;
-}
-
+/* Modal Text */
 .modal-text {
   margin-bottom: 1.5rem;
   font-size: 1rem;
